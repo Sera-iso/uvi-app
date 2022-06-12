@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
+import WeatherOverview from './WeatherOverview'
 import './Search.css'
 
 export default function Search( {defaultCity} ) {
@@ -20,7 +21,7 @@ export default function Search( {defaultCity} ) {
 
     function searchCity() {
         const apiKey = 'f653f847ce192eb5c3a82eb0539032a2'
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
         axios.get(url).then(fetchData)
     }
     
@@ -41,6 +42,7 @@ export default function Search( {defaultCity} ) {
                 <form className="input-group" on onSubmit={handleSubmit} >
                     <input type="search" className="form-control" placeholder="Enter a city" autoFocus onChange={fetchCity} />
                     <input type="submit" className="btn btn-primary" value="Search" />
+                <WeatherOverview data={weather}/>
                 </form>
             </div>
         )    
