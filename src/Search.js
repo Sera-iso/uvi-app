@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import axios from 'axios'
 import WeatherOverview from './WeatherOverview'
+import UvIndex from './UvIndex'
+
 import './Search.css'
 
 export default function Search( {defaultCity} ) {
@@ -16,6 +18,7 @@ export default function Search( {defaultCity} ) {
             icon: response.data.weather[0].icon,
             description: response.data.weather.description,
             condition: response.data.weather[0].main,
+            date: new Date(response.data.dt * 1000)
         })
     }
 
@@ -42,8 +45,9 @@ export default function Search( {defaultCity} ) {
                 <form className="input-group" on onSubmit={handleSubmit} >
                     <input type="search" className="form-control" placeholder="Enter a city" autoFocus onChange={fetchCity} />
                     <input type="submit" className="btn btn-primary" value="Search" />
-                <WeatherOverview data={weather}/>
                 </form>
+                <WeatherOverview data={weather}/>
+                <UvIndex city={weather.city}/>
             </div>
         )    
     } else {
