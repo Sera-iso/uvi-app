@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
 import WeatherOverview from './WeatherOverview'
-import UvIndex from './UvIndex'
 
 import './Search.css'
 
@@ -49,7 +48,6 @@ export default function Search( {defaultCity} ) {
                     <input type="submit" className="btn btn-primary" value="Search" />
                 </form>
                 <WeatherOverview data={weather}/>
-                <UvIndex lon={weather.lon} lat={weather.lat} />
             </div>
         )    
     } else {
