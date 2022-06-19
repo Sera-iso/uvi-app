@@ -18,7 +18,9 @@ export default function Search( {defaultCity} ) {
             icon: response.data.weather[0].icon,
             description: response.data.weather.description,
             condition: response.data.weather[0].main,
-            date: new Date(response.data.dt * 1000)
+            date: new Date(response.data.dt * 1000),
+            lon: response.data.coord.lon,
+            lat: response.data.coord.lat
         })
     }
 
@@ -47,7 +49,7 @@ export default function Search( {defaultCity} ) {
                     <input type="submit" className="btn btn-primary" value="Search" />
                 </form>
                 <WeatherOverview data={weather}/>
-                <UvIndex city={weather.city}/>
+                <UvIndex lon={weather.lon} lat={weather.lat} />
             </div>
         )    
     } else {

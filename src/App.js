@@ -1,4 +1,5 @@
 import Search from './Search'
+import ImageUploader from './ImageUploader'
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <header className="App-header">
         <Search defaultCity="Amsterdam" />
       </header>
+        <ImageUploader />
     </div>
   );
 }
