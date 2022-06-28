@@ -1,0 +1,115 @@
+.UVIndexDisplay {
+    padding-top: 30px;
+}
+
+.UVIndexDisplay .loader {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    margin: 0 auto;
+}
+
+.UVIndexDisplay .loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.UVIndexDisplay .loader span:nth-child(1) {
+    filter: blur(5px);
+}
+
+.UVIndexDisplay .loader span:nth-child(2) {
+    filter: blur(10px);
+}
+
+.UVIndexDisplay .loader span:nth-child(3) {
+    filter: blur(25px);
+}
+
+.UVIndexDisplay .loader span:nth-child(4) {
+    filter: blur(50px);
+}
+
+.UVIndexDisplay .loader:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    border: solid white 3px;
+    border-radius: 50%;
+}
+
+.UVIndexDisplay .green {
+    background: linear-gradient(#dbf7a8,#8cdc6e, #58ab39);
+}
+
+.UVIndexDisplay .green span, 
+.green body {
+    background: linear-gradient(#dbf7a8,#8cdc6e, #58ab39);
+}
+
+.UVIndexDisplay .yellow {
+    background: linear-gradient(#fff8a8,#ffef54, #ffe700);
+}
+
+.UVIndexDisplay .yellow span {
+    background: linear-gradient(#fff8a8,#ffef54, #ffe700);
+}
+.UVIndexDisplay .orange {
+    background: linear-gradient(#ffc9aa,#fba16f, #f97a33);
+}
+
+.UVIndexDisplay .orange span {
+    background: linear-gradient(#ffc9aa,#fba16f, #f97a33);
+}
+
+.UVIndexDisplay .red {
+    background: linear-gradient(#fbb6bb,#e96f78, #df3340);
+}
+
+.UVIndexDisplay .red span {
+    background: linear-gradient(#fbb6bb,#e96f78, #df3340);
+}
+
+.UVIndexDisplay .purple {
+    background: linear-gradient(#e1d6ff,#ab98e0, #886dd3);
+}
+
+.UVIndexDisplay .purple span {
+    background: linear-gradient(#e1d6ff,#ab98e0, #886dd3);
+}
+
+.UVIndexDisplay .uvi {
+    position: relative;
+    bottom: 140px;
+    text-align: center;
+}
+
+.UVIndexDisplay .indexNumber {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    height:70px;
+ }
+
+ .UVIndexDisplay .riskFactor {
+    font-weight: normal;
+    font-size: 0.9rem;
+    margin: 0;
+ }
+
