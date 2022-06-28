@@ -1,0 +1,7 @@
+.WeatherOverview .container {
+    padding: 0;
+}
+
+.WeatherOverview .city {
+    font-weight: normal;
+}
