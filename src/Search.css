@@ -1,3 +1,4 @@
-.Search div {
-    height: 100px;
+.Search .form-control:focus {
+    box-shadow: none;
+    border-color: #595d5e;
 }

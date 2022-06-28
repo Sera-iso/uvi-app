@@ -16,7 +16,6 @@ export default function Search( {defaultCity} ) {
             temp: response.data.main.temp,
             icon: response.data.weather[0].icon,
             description: response.data.weather.description,
-            condition: response.data.weather[0].main,
             date: new Date(response.data.dt * 1000),
             lon: response.data.coord.lon,
             lat: response.data.coord.lat
@@ -43,11 +42,11 @@ export default function Search( {defaultCity} ) {
     if(weather.search) {
         return(
             <div className="Search">
-                <form className="input-group" on onSubmit={handleSubmit} >
-                    <input type="search" className="form-control" placeholder="Enter a city" autoFocus onChange={fetchCity} />
-                    <input type="submit" className="btn btn-primary" value="Search" />
+                <form className="input-group" onSubmit={handleSubmit} >
+                    <input type="search" className="form-control fw-light" placeholder="Enter a city" autoFocus onChange={fetchCity} />
+                    <input type="submit" className="btn btn-dark" value="Search" />
                 </form>
-                <WeatherOverview data={weather}/>
+                <WeatherOverview data={weather} />
             </div>
         )    
     } else {
