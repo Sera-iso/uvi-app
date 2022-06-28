@@ -1,0 +1,29 @@
+.Temperature {
+    margin-top: 0.7rem;
+}
+
+.Temperature ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Temperature li, 
+.Temperature a {
+    display: inline;
+
+}
+
+.Temperature a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+.Temperature .cityTemperature {
+    margin-right: 4px;
+    padding-right: 4px;
+}
+
+.Temperature .units {
+    font-size: 0.8rem;
+}
