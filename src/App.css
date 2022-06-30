@@ -1,7 +1,6 @@
 .App {
-  color: rgb(53, 53, 53);
+  color: #1C2024;
   margin: 0 auto;
-  margin-top: 40px;
   max-width: 400px;
   width: 100%;
   padding: 26px 26px 0 26px;
@@ -16,7 +15,7 @@
 }
 
 footer {
-  margin: 1rem;
+  margin: 2rem;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: lighter;
@@ -24,8 +23,20 @@ footer {
   color: white;
 }
 
-a {
+.home {
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 400px;
+  padding-top: 1rem;
+}
+.home a {
   text-decoration: none;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer a {
   color: white;
 }
 

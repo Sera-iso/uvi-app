@@ -5,9 +5,12 @@ import './App.css';
 function App() {
   return (
     <div>
+    <div className="home">
+    <a href="http://194.195.121.195/uvapp/#home" target="_blank" rel="noreferrer">Back to Home</a>
+    </div>
     <div className="App">
       <header>
-        <h1>Check UV Index</h1>
+        <h1>Check UV</h1>
       </header>
       <main>
           <Search defaultCity="Amsterdam" />
