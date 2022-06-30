@@ -8,6 +8,7 @@
   font-weight: lighter;
   background: white;
   min-height: 580px;
+  border-radius: 10px;
 }
 
 .App h1 {
@@ -24,16 +25,18 @@ footer {
 }
 
 .home {
-  display: block;
-  margin: 0 auto;
   text-align: left;
   max-width: 400px;
-  padding-top: 1rem;
+  padding: 20px;
 }
+
 .home a {
   text-decoration: none;
   color:white;
   font-family: 'Poppins', sans-serif;
+  border: 1px solid white;
+  padding: 0.1em 0.3em;
+  border-radius: 0.2em
 }
 
 footer a {
