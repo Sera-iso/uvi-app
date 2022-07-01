@@ -10,7 +10,7 @@ function App() {
     </div>
     <div className="App">
       <header>
-        <h1>Check UV</h1>
+        <h1>Protect yoUVself</h1>
       </header>
       <main>
           <Search defaultCity="Amsterdam" />

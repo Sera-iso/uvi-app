@@ -1,7 +1,3 @@
-.Temperature {
-    margin-top: 0.7rem;
-}
-
 .Temperature ul {
     list-style-type: none;
     margin: 0;
@@ -26,4 +22,8 @@
 
 .Temperature .units {
     font-size: 0.8rem;
+}
+
+.Temperature {
+    margin-top: 0.7rem;
 }

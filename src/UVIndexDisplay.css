@@ -1,13 +1,21 @@
-.UVIndexDisplay {
-    padding-top: 30px;
-}
-
 .UVIndexDisplay .loader {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     animation: animate 5s linear infinite;
     margin: 0 auto;
+}
+
+.UVIndexDisplay .loader:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    border: solid white 3px;
+    border-radius: 50%;
 }
 
 .UVIndexDisplay .loader span {
@@ -40,18 +48,6 @@
 
 .UVIndexDisplay .loader span:nth-child(4) {
     filter: blur(50px);
-}
-
-.UVIndexDisplay .loader:after {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    background: white;
-    border: solid white 3px;
-    border-radius: 50%;
 }
 
 .UVIndexDisplay .green {
@@ -94,6 +90,10 @@
     background: linear-gradient(#e1d6ff,#ab98e0, #886dd3);
 }
 
+.UVIndexDisplay {
+    padding-top: 30px;
+}
+
 .UVIndexDisplay .uvi {
     position: relative;
     bottom: 140px;
@@ -112,4 +112,3 @@
     font-size: 0.9rem;
     margin: 0;
  }
-
