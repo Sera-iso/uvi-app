@@ -6,11 +6,11 @@ function App() {
   return (
     <div>
     <div className="home">
-    <a href="http://194.195.121.195/uvapp/#home" target="_blank" rel="noreferrer">Back to Home</a>
+    <a href="http://194.195.121.195/uvapp/#home" target="_blank" rel="noreferrer">Learn About UV</a>
     </div>
     <div className="App">
       <header>
-        <h1>Protect yoUVself</h1>
+        <h1>UV Index Checker</h1>
       </header>
       <main>
           <Search defaultCity="Amsterdam" />
